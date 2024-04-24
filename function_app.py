@@ -100,15 +100,8 @@ def update_document(id):
 
 
 
-
-
-
 # Create an Azure Function which serves the above routes in our WSGI runtime (Gunicorn)
 app = func.WsgiFunctionApp(app=app.wsgi_app, http_auth_level=func.AuthLevel.ANONYMOUS)
-
-
-
-
 
 
 
